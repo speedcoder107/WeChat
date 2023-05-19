@@ -1,20 +1,16 @@
-from flask import Flask, flash, redirect, render_template, request, session
-from flask_session import Session
-
-# from tempfile import mkdtemp
-# from werkzeug.security import check_password_hash, generate_password_hash
+from flask import Flask, render_template
+from helpers import login_required
 
 # Configure application
 app = Flask(__name__)
 
-@app.after_request
-def after_request(response):
-    """Ensure responses aren't cached"""
-    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    response.headers["Expires"] = 0
-    response.headers["Pragma"] = "no-cache"
-    return response
-
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
+@login_required
 def index():
+    """index of the game"""
     return render_template("index.html")
+
+
+if __name__ == ("__main__"):
+    app.run(debug=True)
+    """_summary_"""

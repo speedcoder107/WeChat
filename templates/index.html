@@ -1,9 +1,207 @@
-{% extends "layout.html" %}
+{% extends "layout.html"%}
 
-{% block title%}
-Hello, title
+{% block title %}
+Chat
 {% endblock %}
 
-{%block main%}
-hello, world
+{% block style %}
+<style>
+    header {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 70vw;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+
+    html {
+        height: -webkit-fill-available;
+    }
+
+    main {
+        height: 100vh;
+        height: -webkit-fill-available;
+        max-height: 100vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .scrollarea {
+        overflow-y: auto;
+    }
+
+    .footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 70vw;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+</style>
 {% endblock %}
+
+{% block main %}
+<!-- <body data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed=""> -->
+    <main class="d-flex flex-nowrap">
+        <div class="b-example-divider b-example-vr"></div>
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style="width: 380px;">
+            <a href="/"
+                class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+                <svg class="bi pe-none me-2" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-5 fw-semibold">List group</span>
+            </a>
+            <div class="list-group list-group-flush border-bottom scrollarea">
+                <a href="#" class="list-group-item list-group-item-action active py-3 lh-sm" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small>Wed</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Tues</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Mon</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Wed</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Tues</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Mon</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Wed</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Tues</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Mon</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Wed</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Tues</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">List group item heading</strong>
+                        <small class="text-body-secondary">Mon</small>
+                    </div>
+                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="scrollareas p-5 mb-4 bg-body-dark rounded-3" style="overflow-y: auto">
+            <header class="header">
+                This is the header
+            </header>
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the
+                        one in previous versions of Bootstrap. Check out the examples below for how you can remix and
+                        restyle it to your liking.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, doloribus. Inventore assumenda
+                        provident repellendus recusandae velit aliquid minima quo, odit neque odio quibusdam, fugiat
+                        facilis voluptates saepe officiis modi. In!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eum odit pariatur optio porro
+                        fugit sunt explicabo nulla unde recusandae voluptas corrupti beatae doloribus neque deleniti.
+                        Amet officiis expedita minima adipisci ipsum enim voluptates incidunt fuga odit in sequi cumque
+                        obcaecati voluptate, illo animi, labore quaerat. Adipisci aspernatur perferendis doloremque rem
+                        expedita magni? Incidunt dicta aperiam voluptate modi, quas culpa reprehenderit doloremque
+                        debitis sequi at. Architecto perspiciatis non, beatae temporibus dolorem et cum nostrum odio?
+                        Laboriosam, aspernatur! Corporis ducimus, exercitationem laudantium incidunt ut repellat
+                        praesentium autem vitae odio molestias error perspiciatis dignissimos fugit beatae! Voluptatibus
+                        iure sapiente ea nobis cum vitae praesentium hic consectetur, ab tempore illo esse. Dolor
+                        molestiae molestias laborum earum vitae repellendus nostrum similique quod expedita nihil? Quas,
+                        aliquid magnam consectetur possimus voluptate porro fuga ut dolore autem! Praesentium similique
+                        eos officiis expedita, nulla adipisci fuga vero at omnis provident quas doloremque dolores
+                        fugiat reiciendis perferendis ullam possimus minima, vitae quasi. Tenetur provident expedita
+                        dolorum perferendis quia tempora sit maxime dolores labore, vero amet aliquam quas sapiente
+                        veritatis sint nam autem rerum. Maiores, fugit suscipit. Omnis dignissimos possimus molestiae
+                        necessitatibus nisi qui, voluptatibus eum autem corrupti! Praesentium ullam neque distinctio
+                        reprehenderit officia assumenda iste placeat cum harum.</p>
+                    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Place sticky footer content here.</span>
+            </div>
+        </footer>
+    </main>
+    {% endblock %}
+<!-- </body>
+
+</html> -->
