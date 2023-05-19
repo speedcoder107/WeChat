@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70vw;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+main {
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 70vw;
+    background-color: red;
+    color: white;
+    text-align: center;
+}

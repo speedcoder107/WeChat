@@ -5,16 +5,25 @@ Log In
 {% endblock %}
 
 {% block main %}
-<form action="/login" method="post">
-    <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
-        <!-- use class "is-invalid" in input type email, to tell, if they already are registered. -->
-    </div>
-    <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Password</label>
-    </div>
-    <button class="btn btn-primary" type="submit">Log In</button>
-</form>
+<main class="form-signin m-auto">
+    <form action="/login" method="post">
+        <div class="mx-auto position-absolute top-50 start-50 translate-middle">
+            <div class="mx-5">
+                <img class="mx-5" src="{{ url_for('static', filename='logo.png') }}" alt="" width="120" height="120">
+                <h1 class="h3 mb-3 ms-4 fw-normal">Please sign in</h1>
+            </div>
+
+            <div class="form-floating">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mt-3">
+                <input type="password" name ="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign in</button>
+            <p class="ps-5 mt-4 mb-3 fw-normal text-body-secondary">New User here? <a href="/register">Register</a> Now
+        </div>
+    </form>
+</main>
 {% endblock %}
