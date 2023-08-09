@@ -1,4 +1,5 @@
 #WeChat
+
 This web app allows its users to chat with each other, add contacts, and show unread notifications when active.
 It uses WeChat.db as its database with 1 table for all users. And 3 tables for each user to store their chats, contacts, history of other people to chat with.
 I used 2 CSS files. One for the sidebar, header, and footer. Other for the letter.
